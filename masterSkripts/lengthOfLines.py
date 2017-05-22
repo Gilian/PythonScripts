@@ -1,6 +1,8 @@
 # Gibt die durchschnittliche Länge jeder Zeile an
 
-textFile = open('C:\\Users\\Tobi\\Documents\\PythonScripts\\countFirstLetter.txt')
+import os
+
+textFile = open(os.getcwd() + '\\pattern\\all_pattern.txt')
 inputText = textFile.readlines()
 completeLenght = 0
 

@@ -11,7 +11,7 @@ knightmoves_count = {18: 0, 16: 0, 27: 0, 29: 0, 34: 0, 38: 0, 43: 0, 49: 0, 61:
                      92: 0, 94: 0}
 
 # Öffnen und lesen des Files
-file = open(os.getcwd() + '\\countFirstLetter.txt')
+file = open(os.getcwd() + '\\pattern\\all_pattern.txt')
 fileContent = file.readlines()
 file.close()
 

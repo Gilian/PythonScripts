@@ -3,7 +3,7 @@ import os
 # Soll den letzten Charakter einer Zeile zählen
 
 # Öffnen und lesen der Datei
-file = open(os.getcwd() + '\\content.txt')
+file = open(os.getcwd() + '\\pattern\\all_pattern.txt')
 fileContent = file.readlines()
 file.close()
 

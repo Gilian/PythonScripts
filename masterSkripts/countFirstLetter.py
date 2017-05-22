@@ -1,15 +1,17 @@
 # Liest die Zahl am Anfang jeder Zeile
 
-textFile = open('C:\\Users\\Tobi\\Documents\\PythonScripts\\countFirstLetter.txt')
+import os
+
+textFile = open(os.getcwd() + '\\pattern\\all_pattern.txt')
 inputText = textFile.readlines()
 
 # Counter mit Zehn stellen, jede Stelle eine Zahl, letzte Stelle Errors
-counter = [0, 0, 0, 0 ,0 ,0 ,0 ,0 ,0, 0]
+counter = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 # Nimmt die Liste und zählt die Zeilen
 numLines = len(inputText)
 
 for lines in range(numLines):
-    #print('Item ' + str(lines) + ' \n' + inputText[lines])
+    # print('Item ' + str(lines) + ' \n' + inputText[lines])
     firstChar = inputText[lines]
     if int(firstChar[0]) == 1:
         counter[0] += 1
@@ -33,14 +35,16 @@ for lines in range(numLines):
         counter[9] += 1
 textFile.close()
 
+
 def printOutput():
     print("Startknoten und Anzahl: ")
     for lines in range(10):
         if lines < 9:
-            print(str(lines+1) + '  = ' + str(counter[lines]))
+            print(str(lines + 1) + '  = ' + str(counter[lines]))
         else:
             print("Errors: " + str(counter[lines]))
 
-#print(sorted(counter, reverse=True))
+
+# print(sorted(counter, reverse=True))
 
 printOutput()

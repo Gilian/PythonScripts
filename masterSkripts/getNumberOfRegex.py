@@ -1,12 +1,12 @@
 import re
 import os
 
-textFile = open(os.getcwd() + '\\countFirstLetter.txt')
+textFile = open(os.getcwd() + '\\pattern\\imagined_pattern.txt')
 inputText = textFile.readlines()
 
-searchValue = '123'
+searchValue = '1234567'
 
-while int(searchValue) < 999:
+while int(searchValue) < 9999999:
     searchString = re.compile(str(searchValue))
 
     counter = 0
