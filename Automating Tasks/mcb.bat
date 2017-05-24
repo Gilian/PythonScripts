@@ -1,0 +1,1 @@
+@pyw.exe "C:\Users\Tobi\Documents\PythonScripts\AutomatingTasks\mcb.pyw" %*
